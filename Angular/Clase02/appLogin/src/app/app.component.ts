@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	visible: boolean = true
 
+	titulo: string = "Ingrese sus credenciales"
+
 	constructor() {
 		/* setTimeout(() => {
 			this.visible = false
@@ -16,5 +18,9 @@ export class AppComponent {
 
 	cambiarVisibilidad() {
 		this.visible = !this.visible
+	}
+
+	login() {
+		this.visible = false
 	}
 }

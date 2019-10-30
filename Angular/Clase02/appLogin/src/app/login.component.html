@@ -1,5 +1,6 @@
 <form>
-	<input type='text' placeholder='Correo'>
+	<h2>{{ headline }}</h2>
+	<input type='text' placeholder='Correo' (input)="valorIngresado($event)">
 	<input type='password' placeholder='Contraseña'>
-	<button type='button'>Ingresar</button>
+	<button type='button' (click)="loguearse()">Ingresar</button>
 </form>
